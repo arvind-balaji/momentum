@@ -20,13 +20,23 @@
 
       <v-spacer></v-spacer>
 
+      <span>
+        LinkedIns:
+      </span>
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://www.linkedin.com/in/jonathanotsamuel"
         target="_blank"
         text
       >
-        <span class="mr-2">Linkedins</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Jonathan Samuel</span>
+      </v-btn>
+      <v-divider vertical></v-divider>
+      <v-btn
+        href="https://www.linkedin.com/in/arvind-balaji-445675186"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">Arvind Balaji</span>
       </v-btn>
     </v-app-bar>
 
