@@ -1,0 +1,18 @@
+{
+  "name": "momentum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=./momentum-99d132d27119.json node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/video-intelligence": "^3.3.0",
+    "@tensorflow-models/coco-ssd": "^2.2.1",
+    "@tensorflow/tfjs-node": "^3.0.0",
+    "tfjs-yolo": "^0.0.4"
+  }
+}
