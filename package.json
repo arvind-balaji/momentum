@@ -2,17 +2,26 @@
   "name": "momentum",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "",
   "scripts": {
-    "start": "GOOGLE_APPLICATION_CREDENTIALS=./momentum-99d132d27119.json node index.js",
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=./gcp_cred.json node index.js",
+    "startwin": "setx GOOGLE_APPLICATION_CREDENTIALS \"./gcp_cred.json && node index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "main": "index.js",
   "dependencies": {
     "@google-cloud/video-intelligence": "^3.3.0",
     "@tensorflow-models/coco-ssd": "^2.2.1",
     "@tensorflow/tfjs-node": "^3.0.0",
-    "tfjs-yolo": "^0.0.4"
-  }
+    "dotenv": "^8.2.0",
+    "tfjs-yolo": "^0.0.4",
+    "vuetify": "^2.4.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.1.0",
+    "vuetify-loader": "^1.7.0"
+  },
+  "license": "ISC"
 }
