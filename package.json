@@ -13,7 +13,9 @@
     "@google-cloud/video-intelligence": "^3.3.0",
     "@tensorflow-models/coco-ssd": "^2.2.1",
     "@tensorflow/tfjs-node": "^3.0.0",
+    "canvas": "^2.6.1",
     "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
     "tfjs-yolo": "^0.0.4",
     "vuetify": "^2.4.0"
   },

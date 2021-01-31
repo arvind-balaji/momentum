@@ -2,7 +2,20 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        Momentum
+        <router-link to="/"
+          ><v-img
+            alt="Momentum Logo"
+            class="shrink"
+            contain
+            src="./assets/logo.png"
+            transition="scale-transition"
+            width="40"
+            router
+          />
+        </router-link>
+        <span>
+          omentum
+        </span>
       </div>
 
       <v-spacer></v-spacer>
@@ -41,3 +54,8 @@ export default {
   }
 };
 </script>
+<style>
+html {
+  overflow-y: auto;
+}
+</style>

@@ -20,7 +20,7 @@ async function main() {
    * TODO(developer): Uncomment these variables before running the sample.
    */
   console.log(__dirname);
-  const path = "./video2.mkv";
+  const path = "./video7.mkv";
   const {
     StreamingVideoIntelligenceServiceClient
   } = require("@google-cloud/video-intelligence").v1p3beta1;
@@ -97,7 +97,7 @@ async function main() {
         acceptedArr.push(item[1]);
     });
     console.log(acceptedArr, acceptedArr.length);
-    fs.writeFile("video2.json", JSON.stringify(frames, null, 2), () => {});
+    fs.writeFile("video7.json", JSON.stringify(frames, null, 2), () => {});
   });
 }
 main(...process.argv.slice(2)).catch(console.error());

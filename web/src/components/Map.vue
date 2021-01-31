@@ -4,12 +4,7 @@
       <v-col class="mb-5" cols="12"> <div id="map"></div> </v-col>
     </v-row>
     <v-footer
-      ><v-slider
-        :max="max"
-        v-model="scrubber"
-        label="Timeline"
-        thumb-label="always"
-      ></v-slider
+      ><v-slider :max="max" v-model="scrubber" label="Timeline"></v-slider
     ></v-footer>
   </v-container>
 </template>
@@ -17,6 +12,10 @@
 <script>
 import video2 from "./video2_analyzed.json";
 import video3 from "./video3_analyzed.json";
+import video4 from "./video4_analyzed.json";
+import video5 from "./video5_analyzed.json";
+import video6 from "./video6_analyzed.json";
+import video7 from "./video7_analyzed.json";
 import demo from "./demo_analyzed.json";
 
 export default {
@@ -24,7 +23,7 @@ export default {
 
   data() {
     return {
-      videos: [video2, video3, demo],
+      videos: [video2, video3, demo, video4, video5, video6, video7],
       scrubber: 0,
       heat: null,
       map: null,
